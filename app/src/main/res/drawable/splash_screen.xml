@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <!--TODO: Fix gradient angle-->
+            <gradient
+                android:startColor="@color/colorPrimary"
+                android:endColor="@color/colorAccent"
+                android:angle="90" />
+
+        </shape>
+    </item>
+
+    <item android:gravity="center_vertical|start"
+        android:width="64dp"
+        android:height="64dp"
+        android:start="32dp">
+        <bitmap android:src="@drawable/logo" />
+    </item>
+
+    <item
+        android:gravity="center_vertical|end"
+        android:end="32dp">
+        <bitmap
+            android:gravity="right"
+            android:src="@drawable/shufflesongs" />
+    </item>
+
+</layer-list>
