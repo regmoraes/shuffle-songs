@@ -38,7 +38,7 @@ class PlaylistActivity : AppCompatActivity(), PlaylistViewModel.ViewStateRendere
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_playlist)
 
-        setSupportActionBar(toolbar as Toolbar)
+        setActionBar(toolbar)
 
         recyclerView_playlist.apply {
             layoutManager =
