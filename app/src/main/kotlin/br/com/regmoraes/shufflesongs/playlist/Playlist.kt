@@ -7,9 +7,27 @@ import br.com.regmoraes.shufflesongs.track.Track
  **/
 class Playlist(var tracks: List<Track> = emptyList()) {
 
-    fun isEmpty(): Boolean = tracks.isEmpty()
-
     fun shuffle() {
-        this.tracks = tracks.shuffled()
+
+        val shuffledTracks = tracks.shuffled().toMutableList()
+
+        val sortedTracks = mutableListOf<Track>()
+
+        if (shuffledTracks.isNotEmpty()) {
+            sortedTracks.add(shuffledTracks.first())
+
+            while (sortedTracks.size != tracks.size) {
+
+                for (i in 1..shuffledTracks.lastIndex) {
+                    if (sortedTracks.last().artistName != shuffledTracks[i].artistName) {
+                        sortedTracks.add(shuffledTracks[i])
+                        shuffledTracks.removeAt(i)
+                        break
+                    }
+                }
+            }
+
+            this.tracks = sortedTracks
+        }
     }
 }

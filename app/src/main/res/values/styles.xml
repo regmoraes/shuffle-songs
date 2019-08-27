@@ -3,15 +3,26 @@
     <!-- Base application theme. -->
     <style name="ShuffleSongsTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/windowBackground</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Splash screen theme -->
     <style name="ShuffleSongsTheme.SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_screen</item>
     </style>
 
+    <!-- Toolbar theme -->
+    <style name="ShuffleSongsTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+    <!-- Track items theme -->
     <style name="ShuffleSongsTheme.TrackItem.Divider" parent="ShuffleSongsTheme">
         <item name="android:listDivider">@color/trackItemDivider</item>
     </style>

@@ -1,4 +1,4 @@
-package br.com.regmoraes.shufflesongs.presentation
+package br.com.regmoraes.shufflesongs.presentation.playlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

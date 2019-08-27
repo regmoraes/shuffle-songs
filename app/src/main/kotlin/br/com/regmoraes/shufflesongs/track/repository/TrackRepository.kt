@@ -1,5 +1,6 @@
 package br.com.regmoraes.shufflesongs.track.repository
 
+import br.com.regmoraes.shufflesongs.network.Resource
 import br.com.regmoraes.shufflesongs.track.Track
 
 /**
@@ -7,5 +8,5 @@ import br.com.regmoraes.shufflesongs.track.Track
  **/
 interface TrackRepository {
 
-    fun getAllTracksByArtistsId(ids: Array<Int>): List<Track>
+    fun lookupTracksByArtistsId(artistsId: Array<Int>): Resource<List<Track>>
 }

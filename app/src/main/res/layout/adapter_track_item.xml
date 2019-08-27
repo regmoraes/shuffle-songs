@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/imageView_artwork"
@@ -22,7 +22,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
         style="@style/ShuffleSongsTheme.TrackItem.TrackName"
-        android:text="TextView"
+        tools:text="Name of the song"
         app:layout_constraintBottom_toTopOf="@+id/textView_artistNameAndGenre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageView_artwork"
@@ -35,7 +35,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
         style="@style/ShuffleSongsTheme.TrackItem.ArtistName"
-        android:text="TextView"
+        tools:text="Artist name (Genre)"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_artwork"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageView_artwork"

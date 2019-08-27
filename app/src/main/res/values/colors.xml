@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#462E3E</color>
-    <color name="colorPrimaryDark">#372637</color>
+    <color name="colorPrimary">#422F3D</color>
+    <color name="colorPrimaryDark">#352530</color>
     <color name="colorAccent">#794050</color>
+    <color name="windowBackground">#342736</color>
     <color name="white">#FFFFFF</color>
 
     <!-- Track Item Colors -->

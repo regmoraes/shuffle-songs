@@ -1,4 +1,12 @@
 package br.com.regmoraes.shufflesongs
 
-class BaseTest {
+import io.mockk.MockKAnnotations
+import org.junit.Before
+
+abstract class BaseTest {
+
+    @Before
+    open fun setUp() {
+        MockKAnnotations.init(this, relaxUnitFun = true)
+    }
 }

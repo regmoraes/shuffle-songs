@@ -12,6 +12,11 @@ object LookupEndpoint {
 
     const val ENDPOINT = "lookup"
 
+    const val ID_QUERY_PARAMETER = "id"
+
+    const val LIMIT_QUERY_PARAMETER = "limit"
+    const val LIMIT_QUERY_PARAMETER_DEFAULT_VALUE = "5"
+
     interface RestService {
         @GET
         fun lookup(@Url url: String): Call<LookupResponse>

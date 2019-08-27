@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Shuffle Songs</string>
+
+    <string name="artist_name_and_genre_format">%1$s (%2$s)</string>
+
+    <string name="tracks_lookup_error">Ocorreu um erro ao tentar obter suas músicas</string>
+    <string name="tracks_lookup_empty">Nenhuma música foi encontrada</string>
+    <string name="retry">Tentar Novamente</string>
 </resources>

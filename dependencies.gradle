@@ -18,10 +18,18 @@ ext {
             compiler: "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion"
     ]
 
+    mockWebServer = [
+            "com.squareup.okhttp3:mockwebserver:4.1.0"
+    ]
+
     def retrofitVersion = '2.6.1'
     retrofit = [
             core: "com.squareup.retrofit2:retrofit:$retrofitVersion",
             gsonConverter: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
             logging: "com.squareup.okhttp3:logging-interceptor:4.1.0"
+    ]
+
+    timber = [
+            "com.jakewharton.timber:timber:4.7.1"
     ]
 }

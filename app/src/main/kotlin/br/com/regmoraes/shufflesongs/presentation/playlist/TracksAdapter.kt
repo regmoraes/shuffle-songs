@@ -1,4 +1,4 @@
-package br.com.regmoraes.shufflesongs.presentation
+package br.com.regmoraes.shufflesongs.presentation.playlist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -28,16 +28,21 @@ class TracksAdapter :
 
     override fun onBindViewHolder(holder: TrackItemViewHolder, position: Int) {
 
+        val context = holder.itemView.context
         val track = tracks[position]
 
-        Glide.with(holder.itemView.context)
+        Glide.with(context)
             .load(track.artworkUrl)
             .apply(RequestOptions.circleCropTransform())
             .placeholder(R.drawable.ic_music_note)
             .into(holder.itemView.imageView_artwork)
 
         holder.itemView.textView_trackName.text = track.trackName
-        holder.itemView.textView_artistNameAndGenre.text = track.artistName
+        holder.itemView.textView_artistNameAndGenre.text = String.format(
+            context.getString(R.string.artist_name_and_genre_format),
+            track.artistName,
+            track.primaryGenreName
+        )
     }
 
     override fun getItemCount(): Int {

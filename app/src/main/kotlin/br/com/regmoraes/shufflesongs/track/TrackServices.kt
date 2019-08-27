@@ -1,5 +1,6 @@
 package br.com.regmoraes.shufflesongs.track
 
+import br.com.regmoraes.shufflesongs.network.Resource
 import br.com.regmoraes.shufflesongs.track.repository.TrackRepository
 
 /**
@@ -7,10 +8,10 @@ import br.com.regmoraes.shufflesongs.track.repository.TrackRepository
  **/
 class TrackServices(private val trackRepository: TrackRepository) {
 
-    fun getAllTracks(): List<Track> {
+    fun getAllTracks(): Resource<List<Track>> {
 
-        val artistsId = arrayOf(909253, 1171421960, 358714030, 1419227, 264111789)
+        val predefinedArtistsId = arrayOf(909253, 1171421960, 358714030, 1419227, 264111789)
 
-        return trackRepository.getAllTracksByArtistsId(artistsId)
+        return trackRepository.lookupTracksByArtistsId(predefinedArtistsId)
     }
 }

@@ -45,7 +45,6 @@ internal object RetrofitConfiguration {
             .build()
     }
 
-
     fun mapErrorResponse(errorBody: ResponseBody?): ApiError {
 
         val bodyAsString = errorBody?.string()
