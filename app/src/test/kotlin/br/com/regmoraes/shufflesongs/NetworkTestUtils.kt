@@ -2,7 +2,7 @@ package br.com.regmoraes.shufflesongs
 
 
 /**
- *   Copyright {2018} {Rômulo Eduardo G. Moraes}
+ *   Copyright {2019} {Rômulo Eduardo G. Moraes}
  **/
 internal object NetworkTestUtils {
 
